@@ -5,8 +5,7 @@ on:
   push:
     branches: [ master ]
 
-jobs:
-  
+jobs: 
   # ci:
   #   runs-on: ubuntu-latest
   #   steps:

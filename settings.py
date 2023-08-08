@@ -675,7 +675,6 @@ def file_logger(file_path, app_name):
     return logger
 
 def console_logger(app_name):
-    print('hi i am the logger')
     logger = logging.getLogger(f'TheDeepChecker: {app_name} Logs')
     logger.setLevel(logging.DEBUG)
     ch = logging.StreamHandler()

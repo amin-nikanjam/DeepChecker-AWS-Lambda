@@ -16,7 +16,7 @@ class DeepCheckerTest(unittest.TestCase):
     
     #this test checks that the niumber of bugs stated by deepchecker is as expected
     def test_deepchecker(self):
-        expected_bug_occurences=62
+        expected_bug_occurences=62 
         print('Test staring..')
         (x_train, y_train), (x_test, y_test) = datasets.mnist.load_data()
         data_loader_under_test = data.DataLoaderFromArrays(x_train, y_train, shuffle=True, one_hot=True, normalization=True)

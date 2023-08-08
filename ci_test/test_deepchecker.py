@@ -33,12 +33,26 @@ class DeepCheckerTest(unittest.TestCase):
         #In order to get the number of bugs, we will need to get the date of today, because in each bug there is a timestapm where
         #the date is written in this format 2023-08-08 15.
         today = date.today()
-        today = today.strftime("%Y/%m/%d")
+        today = today.strftime("%Y-%m-%d")
         print("todaaay gh",today)
 
+        occurrences = count_occurrences(log_data, today)
+        print('occ:', occurrences)
         assert log_data==expected_data
         print('Test finished successfully.')
 
+
+def count_occurrences(main_string, substring):
+    count = 0
+    start_index = 0
+
+    while start_index < len(main_string):
+        index = main_string.find(substring, start_index)
+        if index == -1:
+            break
+        count += 1
+        start_index = index + len(substring)
+    return count
 
 
 

@@ -36,8 +36,6 @@ class DeepCheckerTest(unittest.TestCase):
         today = today.strftime("%Y-%m-%d")
 
         occurrences = count_occurrences(log_data, today)
-        print('occ:', occurrences)
-        print('occ2:', expected_bug_occurences)
         assert occurrences==expected_bug_occurences
         print('Test finished successfully.')
 

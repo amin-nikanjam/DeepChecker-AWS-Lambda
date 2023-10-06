@@ -1,5 +1,3 @@
-[![codecov](https://codecov.io/github/Ghassen-Da/refactored_DC/branch/master/graph/badge.svg?token=dnJUYLKKHx)](https://codecov.io/github/Ghassen-Da/refactored_DC)
-
 To use the applications, you need to do the following:
 1.	Create a GitHub app (you can follow this link: https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app)
 The role of the GitHub app is to listen to Pull Requests and send a notification to AWS if there is one.
